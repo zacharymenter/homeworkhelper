@@ -1,0 +1,29 @@
+nav {
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+nav > ul > li {
+    background-color: #ffee82;
+    border: 2px solid black;
+    border-radius: 10px 10px 0px 0px;
+
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+nav > ul > li:active, .active {
+    background-color: #fff6bc;
+}
