@@ -1,6 +1,47 @@
 body {
   margin: 0px;
+}
+
+form {
+  position: relative;
+}
+
+#flexbox {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  position: relative;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: 0px;
+}
+
+#blue {
+  width: 49.7%;
+  height: 350px;
+  margin-right: 0.5%;
   background-color: #8ac4f4;
+}
+
+#red {
+  width: 49.7%;
+  height: 350px;
+  background-color: #f54746;
+}
+
+#green {
+  width: 49.7%;
+  height: 350px;
+  margin-right: 0.5%;
+  background-color: #87d37b;
+}
+
+#yellow {
+  width: 49.7%;
+  height: 350px;
+  background-color: #ffc413;
 }
 
 #container {
@@ -10,6 +51,8 @@ body {
   margin-top: 10rem;
   background: white;
   border-radius: 25px;
+  position: absolute;
+  z-index: 9;
 }
 
 h3 {
