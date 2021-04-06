@@ -2,13 +2,9 @@ body {
   margin: 0px;
 }
 
-form {
-  position: relative;
-}
-
 #flexbox {
   width: 100%;
-  height: 700px;
+  height: 710px;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -20,39 +16,62 @@ form {
 
 #blue {
   width: 49.7%;
-  height: 350px;
+  height: 50%;
   margin-right: 0.5%;
   background-color: #8ac4f4;
+  text-align: left;
+}
+
+.fa {
+  padding: 50px;
+  color: white;
+  margin: 10px;
 }
 
 #red {
   width: 49.7%;
-  height: 350px;
+  height: 50%;
   background-color: #f54746;
+  text-align: right;
 }
 
 #green {
   width: 49.7%;
-  height: 350px;
+  height: 50%;
+  margin-top: 0.5%;
   margin-right: 0.5%;
   background-color: #87d37b;
+  text-align: left;
+}
+
+.fa-calendar {
+  padding-top: 200px;
 }
 
 #yellow {
   width: 49.7%;
-  height: 350px;
+  height: 50%;
+  margin-top: 0.5%;
   background-color: #ffc413;
+  text-align: right;
+}
+
+.fa-bell {
+  padding-top: 200px;
 }
 
 #container {
   width: 75%;
   padding: 15px;
-  margin: auto;
   margin-top: 10rem;
   background: white;
   border-radius: 25px;
   position: absolute;
-  z-index: 9;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 h3 {
