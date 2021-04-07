@@ -63,6 +63,11 @@ nav > ul > li > a:hover {
 }
 
 .assignment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 1%;
     border: 1px solid black;
 
 }
