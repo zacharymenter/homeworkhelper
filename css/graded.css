@@ -3,11 +3,11 @@ body {
 }
 
 #container {
-    background-color: #F54746;
+    background-color: #8AC4F4;
     width: 100%;
     height: 100%;
 }
 
 nav > ul > li.active {
-    border-bottom: 2px solid #F54746;
+    border-bottom: 2px solid #8AC4F4;
 }
