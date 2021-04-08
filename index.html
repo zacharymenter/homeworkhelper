@@ -12,7 +12,8 @@
         <div id="main-container">
             <nav id="navigation">
                 <ul>
-                    <li style="background-color: #F54746;" class ="active"><a href="index.html">Assignments</a></li>
+                    <li style="background-color: #F54746;" class ="active"><a href="index.html">Home</a></li>
+                    <li style="background-color: #FFC413;"><a href="assignments.html">Assignments</a></li>
                     <li style="background-color: #87D37B;"><a href="completed.html">Completed</a></li>
                     <li style="background-color: #8AC4F4;"><a href="graded.html">Graded</a></li>
                 </ul>
@@ -20,42 +21,7 @@
 
 
             <div id="container">
-                <div class="form-container" id="assignment-form">
-            
-                    <form>
-        
-                    <h3>Add Assignment</h3>
-        
-                    <input type="text" id="name" placeholder="Assignment Name" required>
-                    <textarea type="text" id="description" placeholder="Assignment Description"></textarea>
-                    <input type="date" id="due-date" placeholder="Due Date" required>
-                    <input type="time" id="due-time" placeholder="Due Time" required>
-        
-                    <button type="button" onclick="addAssignment()">Save</button>
-                    <button type ="button" class="cancelbtn" onclick="closeForm()">Cancel</button>
-                    </form>
-                </div> 
-
-
-
-
-                <div id="assignments-container">
-                    <div class="assignments-header">
-                        <h1>Assignments</h1>
-                        <button type="button" class="form-button" onclick="openForm()">&plus;</button>
-                    </div>
-
-                    <ul id="assignment-list">
-                        <li>
-                            <div class="assignment">
-                                <div class="assignment-name"><h3>Yeet</h3></div>
-                                <div class="assignment-desc">This is a test thing.</div>
-                                <div class="assignment-due-date">2021-04-13</div>
-                                <input type="checkbox" class="assignment-checkbox">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </body>
