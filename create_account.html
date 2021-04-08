@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login</title>
+    <title>Create Account</title>
 </head>
 <body>
   
@@ -27,21 +27,31 @@
 
         
 
-        <div id = "container">
+        <div id = "container2">
             
             <form>
 
             <h3>Create Account</h3>
 
+            <input type = "text" placeholder="Enter email" name = "email" required>
+            <input type = "text" placeholder="Enter full name" name = "name" required>
             <input type="text" placeholder="Enter Username" name="username" required>
             <input type="password" placeholder="Enter Password" name="password" required>
-
-            <button type="submit">Login</button>
+            <label for="schools">Select a school: </label>
+            <select id="schools" name="schools">
+              <option value="uwec">University of Wisconsin-Eau Claire</option>
+              <option value="chip_tech">Chippewa Valley Technical College</option>
+              <option value="memorial">Memorial High School</option>
+              <option value="north">Eau Claire North High School</option>
+              <option value="regis">Regis Catholic Schools</option>
+              <option value="delong">Delong Middle School</option>
+            </select>
+            <button type="submit">Sign Up</button>
 
             
             <!----put into flexbox-->
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">New <a href="create_account.html">user?</a></span>
+           
+            <button type="button" class="cancelbtn"  onclick="document.location ='login.html'">Cancel</button>
             </form>
             
               
