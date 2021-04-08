@@ -41,6 +41,7 @@ nav > ul > li > a:hover {
 
 #container {
     display: flex;
+    flex-direction: column;
     border: 2px solid black;
 
     border-radius: 0px 10px 10px 10px;
@@ -64,5 +65,48 @@ nav > ul > li > a:hover {
 
     padding: 1%;
     border: 1px solid black;
+}
+
+.form-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 280px;
+}
+
+.form-popup {
+    /* display: none; */
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+
+    border: 3px solid #f1f1f1;
+    background-color: rgb(168, 168, 168);
+
+    z-index: 9;
+}
+
+.form-popup > form {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.form-popup > form input, .form-popup > form textarea{
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 2%;
+    border: none;
+    background: #f1f1f1;
+}
+
+#desc {
+    resize: none;
 }
 
