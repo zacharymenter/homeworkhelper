@@ -10,8 +10,7 @@
         <div id="main-container">
             <nav id="navigation">
                 <ul>
-                    <li style="background-color: #F54746;"><a href="index.html">Home</a></li>
-                    <li style="background-color: #FFC413;"><a href="assignments.html">Assignments</a></li>
+                    <li style="background-color: #F54746;"><a href="index.html">Assignments</a></li>
                     <li style="background-color: #87D37B;" class ="active"><a href="completed.html">Completed</a></li>
                     <li style="background-color: #8AC4F4;"><a href="graded.html">Graded</a></li>
                 </ul>
@@ -19,7 +18,16 @@
 
 
             <div id="container">
-                
+                <div id="assignments-container">
+                    <div class="assignments-header">
+                        <h1>Completed Assignments</h1>
+                        <button type="button" class="form-button" onclick="openForm()">&plus;</button>
+                    </div>
+
+                    <ul id="assignment-list">
+                        
+                    </ul>
+                </div>
             </div>
         </div>
     </body>

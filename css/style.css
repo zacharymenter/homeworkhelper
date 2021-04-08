@@ -1,3 +1,7 @@
+h3 {
+    margin: 0;
+}
+
 nav > ul {
     display: flex;
     flex-direction: row;
@@ -52,10 +56,40 @@ nav > ul > li > a:hover {
     padding: 1%;
     
     width: 90%;
-    height: 90%;
+    height: 80%;
     background-color: rgb(255, 255, 255);
 
     border-radius: 5px;
+}
+
+.assignments-header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    justify-content: space-between;
+}
+
+.assignments-header > h1 {
+    margin: 1%;
+    align-self: center;
+}
+
+.form-button {
+    color: rgb(60, 60, 60);
+    background-color: white;
+    font-size: 2vw;
+    margin: 1%;
+    text-align: center;
+    align-self: center;
+
+    border: none;
+    cursor: pointer;
+}
+
+.form-button:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .assignment {
@@ -67,46 +101,82 @@ nav > ul > li > a:hover {
     border: 1px solid black;
 }
 
-.form-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 280px;
+.assignment-name, .assignment-desc, .assignment-due-date, .assignment-checkbox {
+    width: 25%;
+    margin-right: 10px;
+    align-self: center;
 }
 
-.form-popup {
-    /* display: none; */
-    position: fixed;
-    width: 400px;
-    height: 300px;
-    top: 50%;
-    left: 50%;
-    margin-top: -150px;
-    margin-left: -200px;
+.form-container {
+    display: none;
+    width: 50%;
+    padding: 15px;
+    margin-top: 10rem;
+    background: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px black;
 
-    border: 3px solid #f1f1f1;
-    background-color: rgb(168, 168, 168);
-
-    z-index: 9;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
-.form-popup > form {
+.form-container > form {
     display: flex;
     flex-direction: column;
     padding: 1%;
 }
 
-.form-popup > form input, .form-popup > form textarea{
-    width: 80%;
-    padding: 5px;
-    margin-bottom: 2%;
-    border: none;
-    background: #f1f1f1;
-}
-
-#desc {
+input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
     resize: none;
 }
 
+label {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+form > button {
+    background-color: #87d37b;
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 8px 16px;
+    background-color: #f54746;
+}
+
+#assignment-list {
+    height: 80%;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#assignment-list > li {
+    margin-bottom: 5px;
+}
