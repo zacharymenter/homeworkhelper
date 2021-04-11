@@ -61,7 +61,8 @@ body {
 }
 
 #container,
-#container2 {
+#container2,
+#container3 {
   width: 75%;
   padding: 15px;
   margin-top: 10rem;
@@ -78,8 +79,15 @@ body {
 #container2 {
   margin-top: 4rem;
 }
+#container3 {
+  width: 60%;
+}
 
 h3 {
+  text-align: center;
+}
+
+p {
   text-align: center;
 }
 

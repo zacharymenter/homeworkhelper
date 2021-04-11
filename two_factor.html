@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login</title>
+    <title>Two Factor Authentication</title>
 </head>
 <body>
   
@@ -34,28 +34,24 @@
 
         
 
-        <div id = "container">
+        <div id = "container3">
             
             <form>
 
-            <h3>Homework Helper</h3>
+            <h3>Two Factor Authentication</h3>
+            <p>For security reasons, we require additional information to verify your account</p>
 
-            <input type="text" placeholder="Enter Username" name="username" required>
-            <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="text" placeholder="Enter Pin" name="pin" required>
 
-            <button type="submit" onclick="location.href = 'two_factor.html';" >Login</button>
+            <button type="submit" onclick="location.href = 'welcome.html';">Verify</button>
+            <span class="psw">Need support? Contact homehelperhelp@gmail.com</span>
 
-            
-            <!----put into flexbox-->
-            <button type = "button" class="cancelbtn">Cancel</button>
-            <span class="psw">New <a href="create_account.html">user?</a></span>
+        
+            <button type = "button" class="cancelbtn" onclick="location.href = 'login.html';">Cancel</button>
             </form>
             
               
         </div> 
-          
-        
-
    
 </body>
 </html>
