@@ -15,7 +15,7 @@ function addAssignment() {
     if (name != "" && date != "" && time != "") {
         var li = document.createElement("li");
 
-        li.innerHTML = "<div class=\"assignment\"><div class=\"assignment-name\"><h3>" + name + "</h3></div><div class=\"assignment-desc\">" + desc + "</div><div class=\"assignment-due-date\">" + date + " at " + time + "</div><input type=\"checkbox\" class=\"assignment-checkbox\"></div>"
+        li.innerHTML = "<div class=\"assignment\"><div class=\"assignment-name\"><h3>" + name + "</h3></div><div class=\"assignment-desc\">" + desc + "</div><div class=\"assignment-due-date\">" + date + "</div><input type=\"checkbox\" class=\"assignment-checkbox\"></div>"
 
         document.getElementById("assignment-list").appendChild(li);
         closeForm();

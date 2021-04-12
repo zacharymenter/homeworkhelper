@@ -99,6 +99,7 @@ nav > ul > li > a:hover {
 
     padding: 1%;
     border: 1px solid black;
+    background-color: rgb(230, 230, 230);
 }
 
 .assignment-name, .assignment-desc, .assignment-due-date, .assignment-checkbox {
