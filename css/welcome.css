@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    align-content: center;
 }
 body {
     background-color: #fbfbfb;
@@ -21,26 +22,33 @@ main {
 .block {
     float: left;
     height: 30rem;
-    width: 50%;
+    width: 48%;
 }
+div {padding: 0.5rem;}
+.wide {margin: 0.5rem}
 .width {
     float: left; 
-    width: 100%;
+    width: 99%;
+    align-content: center;
 }
-.square{ 
-    display: flex;
+.square{display: flex;}
+.width > .row {
+    margin: 0.25rem;
+}
+.width > .blue {
+    margin-left: 0;
+}
+.width > .red {
+    margin-right: 0;
 }
 .row {
     width: 25%;
     height: 9rem;
+    
 }
 .column {
    box-sizing: border-box;
    float: left;
-   display: flex; 
-}
-.right {
-    float: right;
 }
 .stack {
     display: flex;
@@ -48,13 +56,19 @@ main {
     width: 50%;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .stack > .row {
-    width: 50%;
-    height: 15rem;
+    width: 48%;
+    height: 14.5rem;
 }
-.main {
-    width: 100%;
+.test {
+    margin-bottom: 1rem;
+}
+.large {
+    width: 98%;
+    float: left;
+    margin: 0.5rem;
 }
 .block > h2, .row > h3 {
     text-align: center;
