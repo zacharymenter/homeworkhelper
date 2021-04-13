@@ -86,3 +86,16 @@ div {padding: 0.5rem;}
 .blue {
     background-color: #8AC4F4;
 }
+@media (max-width: 835px) {
+    .block {
+        width: 98%;
+    }
+    .square .width {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .row {
+        width: 49%;
+        height: 12rem;
+    }
+}
