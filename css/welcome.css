@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 body {
-    background-color: slategrey;
+    background-color: #fbfbfb;
     color: #fbfbfb;
 }
 h1 {
     padding: 1rem;
     font-size: 3rem;
     text-align: center;
+    color: slategray;
 }
 main {
     max-width: 75rem;
@@ -21,24 +22,41 @@ main {
     align-content: center;
     margin: 1rem;
 }
-.main-block {
+.block {
     display: inline-block;
     height: 30rem;
-    width: 49%;
+    width: 49.5%;
 }
-.main-block > h2 {
+.square{
+    display: flex;
+}
+.row {
+    width: 25%;
+    height: 9rem;
+}
+.column {
+    flex-direction: column;
+   
+}
+#stack {
+    display: block;
+}
+.main {
+    width: 100%;
+}
+.block > h2, .row > h3 {
     text-align: center;
     padding: 1rem;
 }
-#home {
+.red {
     background-color: #F54746;
 }
-#assignment {
+.yellow {
     background-color: #FFC413;
 }
-#completed {
+.green {
     background-color: #87D37B;
 }
-#graded {
+.blue {
     background-color: #8AC4F4;
 }
