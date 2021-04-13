@@ -12,22 +12,22 @@ h1 {
     font-size: 3rem;
     text-align: center;
     color: slategray;
+    margin-bottom: 1.5rem;
 }
 main {
     max-width: 75rem;
     margin: 1rem auto;
 }
-#container {
-    display: flex;
-    align-content: center;
-    margin: 1rem;
-}
 .block {
-    display: inline-block;
+    float: left;
     height: 30rem;
-    width: 49.5%;
+    width: 50%;
 }
-.square{
+.width {
+    float: left; 
+    width: 100%;
+}
+.square{ 
     display: flex;
 }
 .row {
@@ -35,11 +35,23 @@ main {
     height: 9rem;
 }
 .column {
-    flex-direction: column;
-   
+   box-sizing: border-box;
+   float: left;
+   display: flex; 
 }
-#stack {
-    display: block;
+.right {
+    float: right;
+}
+.stack {
+    display: flex;
+    overflow: hidden;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.stack > .row {
+    width: 50%;
+    height: 15rem;
 }
 .main {
     width: 100%;
