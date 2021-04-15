@@ -1,101 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    align-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-content: center;
 }
 body {
-    background-color: #fbfbfb;
-    color: #fbfbfb;
+  background-color: #fbfbfb;
+  color: #fbfbfb;
 }
 h1 {
-    padding: 1rem;
-    font-size: 3rem;
-    text-align: center;
-    color: slategray;
-    margin-bottom: 1.5rem;
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  color: slategray;
+  margin-bottom: 1.5rem;
 }
-main {
-    max-width: 75rem;
-    margin: 1rem auto;
-}
+
 .block {
-    float: left;
-    height: 30rem;
-    width: 48%;
+  float: left;
+  height: 30rem;
+  width: 48%;
 }
-div {padding: 0.5rem;}
-.wide {margin: 0.5rem}
+div {
+  padding: 0.5rem;
+}
+.wide {
+  margin: 0.5rem;
+}
 .width {
-    float: left; 
-    width: 99%;
-    align-content: center;
+  float: left;
+  width: 99%;
+  align-content: center;
 }
-.square{display: flex;}
+.square {
+  display: flex;
+}
 .width > .row {
-    margin: 0.25rem;
+  margin: 0.25rem;
 }
 .width > .blue {
-    margin-left: 0;
+  margin-left: 0;
 }
 .width > .red {
-    margin-right: 0;
+  margin-right: 0;
 }
 .row {
-    width: 25%;
-    height: 9rem;
-    
+  width: 25%;
+  height: 9rem;
 }
 .column {
-   box-sizing: border-box;
-   float: left;
+  box-sizing: border-box;
+  float: left;
 }
 .stack {
-    display: flex;
-    overflow: hidden;
-    width: 50%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .stack > .row {
-    width: 48%;
-    height: 14.5rem;
+  width: 48%;
+  height: 14.5rem;
 }
 .test {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .large {
-    width: 98%;
-    float: left;
-    margin: 0.5rem;
+  width: 98%;
+  float: left;
+  margin: 0.5rem;
 }
-.block > h2, .row > h3 {
-    text-align: center;
-    padding: 1rem;
+.block > h2,
+.row > h3 {
+  text-align: center;
+  padding: 1rem;
 }
 .red {
-    background-color: #F54746;
+  background-color: #f54746;
 }
 .yellow {
-    background-color: #FFC413;
+  background-color: #ffc413;
 }
 .green {
-    background-color: #87D37B;
+  background-color: #87d37b;
 }
 .blue {
-    background-color: #8AC4F4;
+  background-color: #8ac4f4;
 }
 @media (max-width: 835px) {
-    .block {
-        width: 98%;
-    }
-    .square .width {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    .row {
-        width: 49%;
-        height: 12rem;
-    }
+  .block {
+    width: 98%;
+  }
+  .square .width {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .row {
+    width: 49%;
+    height: 12rem;
+  }
 }
