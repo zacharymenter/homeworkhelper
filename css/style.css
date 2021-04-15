@@ -1,183 +1,183 @@
 h3 {
-    margin: 0;
+  margin: 0;
+}
+
+h1 {
+  color: white;
 }
 
 nav > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 0px;
 
-    list-style: none;
+  list-style: none;
 }
 
 nav > ul > li {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    border-radius: 10px 10px 0px 0px;
-
-    margin: 0;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+  margin-right: 0.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 50px;
 }
 
 nav > ul > li > a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 nav > ul > li > a:hover {
-    opacity: 50%
+  opacity: 50%;
 }
 
 #main-container {
-    margin: auto;
-
-    width: 90vw;
-    height: 90vh;
+  width: 100%;
+  height: 93vh;
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-
-    border-radius: 0px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0px 10px 10px 10px;
 }
 
 #assignments-container {
-    margin: auto;
-    padding: 1%;
-    
-    width: 90%;
-    height: 80%;
-    background-color: rgb(255, 255, 255);
+  margin: auto;
+  padding: 1%;
 
-    border-radius: 5px;
+  width: 90%;
+  height: 80%;
+  background-color: #ffc413;
+
+  border-radius: 5px;
 }
 
 .assignments-header {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .assignments-header > h1 {
-    margin: 1%;
-    align-self: center;
+  margin: 1%;
+  align-self: center;
 }
 
 .form-button {
-    color: rgb(60, 60, 60);
-    background-color: white;
-    font-size: 2vw;
-    margin: 1%;
-    text-align: center;
-    align-self: center;
+  color: rgb(60, 60, 60);
+  background-color: white;
+  font-size: 2vw;
+  margin: 1%;
+  text-align: center;
+  align-self: center;
 
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
 
 .form-button:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .assignment {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding: 1%;
-    border: 1px solid black;
-    background-color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: white;
+  margin: 15px;
 }
 
-.assignment-name, .assignment-desc, .assignment-due-date, .assignment-checkbox {
-    width: 25%;
-    margin-right: 10px;
-    align-self: center;
+.assignment-name,
+.assignment-desc,
+.assignment-due-date,
+.assignment-checkbox {
+  width: 25%;
+  margin-right: 10px;
+  align-self: center;
 }
 
 .form-container {
-    display: none;
-    width: 50%;
-    padding: 15px;
-    margin-top: 10rem;
-    background: white;
-    border: 1px solid black;
-    border-radius: 25px;
-    box-shadow: 0px 0px 10px black;
+  display: none;
+  width: 50%;
+  padding: 15px;
+  margin-top: 10rem;
+  background: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px black;
 
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 10;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .form-container > form {
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
 }
 
-input, textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 15px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    resize: none;
+input,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: none;
 }
 
 label {
-    width: 100%;
-    display: inline-block;
-    box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 form > button {
-    background-color: #87d37b;
-    color: white;
-    padding: 14px 20px;
-    margin: 15px 0;
-    border: none;
-    width: 100%;
+  background-color: #87d37b;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px 0;
+  border: none;
+  width: 100%;
 }
 
 button:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .cancelbtn {
-    width: auto;
-    padding: 8px 16px;
-    background-color: #f54746;
+  width: auto;
+  padding: 8px 16px;
+  background-color: #f54746;
 }
 
 #assignment-list {
-    height: 90%;
-    overflow: hidden;
-    overflow-y: scroll;
+  height: 90%;
+  overflow: hidden;
+  overflow-y: scroll;
 
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #assignment-list > li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
