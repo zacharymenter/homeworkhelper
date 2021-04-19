@@ -11,5 +11,5 @@
 
     mysqli_close($con);
 
-    header('Location: assignments.php');
+    header('Location: ../assignments.php');
 ?>
