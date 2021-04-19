@@ -102,9 +102,15 @@ nav > ul > li > a:hover {
     background-color: rgb(230, 230, 230);
 }
 
-.assignment-name, .assignment-desc, .assignment-due-date, .assignment-checkbox {
+.assignment-name, .assignment-desc, .assignment-due-date, .assignment-due-time, .assignment-grade {
     width: 25%;
     margin-right: 10px;
+    align-self: center;
+}
+
+.assignment-checkbox {
+    width: 5%;
+    margin: 0;
     align-self: center;
 }
 
