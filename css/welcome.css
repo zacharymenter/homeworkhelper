@@ -91,7 +91,7 @@ div {
 }
 @media (max-width: 835px) {
   .block {
-    width: 98%;
+    width: 100%;
   }
   .square .width {
     width: 100%;
