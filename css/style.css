@@ -51,11 +51,8 @@ nav > ul > li > a:hover {
 #assignments-container {
   margin: auto;
   padding: 1%;
-
   width: 90%;
   height: 80%;
-  background-color: #ffc413;
-
   border-radius: 5px;
 }
 

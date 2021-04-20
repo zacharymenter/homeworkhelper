@@ -1,11 +1,14 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 #container {
-    background-color: #87D37B;
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#assignments-container {
+  background-color: #87d37b;
 }
 
 nav > ul > li.active {
