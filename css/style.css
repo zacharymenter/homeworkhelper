@@ -105,6 +105,12 @@ nav > ul > li > a:hover {
   align-self: center;
 }
 
+.assignment-checkbox {
+    width: 5%;
+    margin: 0;
+    align-self: center;
+}
+
 .form-container {
   display: none;
   width: 50%;

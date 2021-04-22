@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Two Factor Authentication</title>
+    <script src="js/submitForm.js"></script>
+    <title>Login</title>
 </head>
 <body>
   
@@ -34,24 +35,28 @@
 
         
 
-        <div id = "container3">
+        <div id = "container">
             
-            <form action="index.php">
+            <form action="googleLogin.php" method="post">
 
-            <h3>Two Factor Authentication</h3>
-            <p>For security reasons, we require additional information to verify your account</p>
+            <h3>Enter your google credentials</h3>
 
-            <input type="text" placeholder="Enter Pin" name="pin" required>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
 
-            <button type="submit"> Verify</button>
-            <span class="psw">Need support? Contact homehelperhelp@gmail.com</span>
+            <button type="submit">Login</button>
 
-        
-            <button type = "button" class="cancelbtn" onclick="document.location ='login.html'">Cancel</button>
+            
+            <!----put into flexbox-->
+            <button type = "button" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="index.php">go back?</a></span>
             </form>
             
               
         </div> 
+          
+        
+
    
 </body>
 </html>

@@ -8,13 +8,14 @@ var list, i, switching, b, shouldSwitch;
     switching = false;
 
     b = list.getElementsByTagName("li");
-    var c = document.getElementsByClassName("assignment-due-date")
+    var c = document.getElementsByClassName("plain-date");
 
     for (i = 0; i < (b.length - 1); i++) {
       shouldSwitch = false;
 
-      var date1 = Date.parse(c[i].innerHTML)
-      var date2 = Date.parse(c[i + 1].innerHTML)
+      var date1 = Date.parse(c[i].innerHTML);
+      var date2 = Date.parse(c[i + 1].innerHTML);
+
       if (date1 > date2) {
         shouldSwitch = true;
         break;
