@@ -63,7 +63,8 @@
                                                 </div>
                                                 <div class=\"assignment-desc\">" . $row['description'] . "</div>
                                                 <div class=\"assignment-due-date\">" . date_format(date_create($row['date'] . $row['time']), 'D\, M d\, g:ia') . "</div>
-                                                <div class=\"plain-date\" style=\"display:none\">" . $row['date'] . " " . $row['time'] . "</div>";
+                <a href=\"http://www.google.com/calendar/event?action=TEMPLATE&text=" . $row['name'] . "&dates=". date_format(date_create($row['date'] . $row['time']), 'Ymd\This') . "/" . date_format(date_create($row['date'] . $row['time']), 'Ymd\This') . "&details=" . $row['description'] . "&location=\" target=\"_blank\">Add to Google Calendar</a>
+                <div class=\"plain-date\" style=\"display:none\">" . $row['date'] . " " . $row['time'] . "</div>";
 
                                 
                                 if ($row['sep'] == 0) {
