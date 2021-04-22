@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/submitForm.js"></script>
+    <title>Login</title>
+</head>
+<body>
+  
+        <div id = "flexbox">
+            <div id = "blue">
+                <i class="fa fa-pencil fa-5x"></i>
+            </div>
+    
+            <div id = "red">
+                <i class="fa fa-calculator fa-5x"></i>
+    
+            </div>
+    
+            <div id = "green">
+                <i class="fa fa-calendar fa-5x"></i>
+    
+            </div>
+    
+            <div id = "yellow">
+                <i class="fa fa-bell fa-5x"></i>
+                
+            </div>
+    
+        </div>
+
+        
+
+        <div id = "container">
+            
+            <form action="googleLogin.php" method="post">
+
+            <h3>Enter your google credentials</h3>
+
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+            <button type="submit">Login</button>
+
+            
+            <!----put into flexbox-->
+            <button type = "button" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="index.php">go back?</a></span>
+            </form>
+            
+              
+        </div> 
+          
+        
+
+   
+</body>
+</html>
