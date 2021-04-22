@@ -46,6 +46,7 @@ nav > ul > li > a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: #f5f3f4;
 }
 
 #assignments-container {
