@@ -14,7 +14,7 @@
         <div id="main-container">
             <nav id="navigation">
                 <ul>
-                    <li style="background-color: #F54746;"><a href="index.html">Home</a></li>
+                    <li style="background-color: #F54746;"><a href="index.php">Home</a></li>
                     <li style="background-color: #FFC413;" class ="active"><a href="assignments.php">Assignments</a></li>
                     <li style="background-color: #87D37B;"><a href="completed.php">Completed</a></li>
                     <li style="background-color: #8AC4F4;"><a href="graded.php">Graded</a></li>
