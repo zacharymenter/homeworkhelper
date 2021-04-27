@@ -44,7 +44,7 @@
                                                     <h3>" . $row['name'] . "</h3>
                                                 </div>
                                                 <div class=\"assignment-desc\">" . $row['description'] . "</div>
-                                                <div class=\"assignment-grade\">" . $row['grade'] . "</div>
+                                                <div class=\"assignment-grade\">Grade: " . $row['grade'] . "%</div>
                                             </div>
                                         </li>";  
                             }
