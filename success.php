@@ -9,10 +9,8 @@ require_once('sql_conn.php');
 
 session_start();
 // Holds the Google application Client Id, Client Secret and Redirect Url
-require_once('php/settings.php');
+require_once('setting.php');
 
-// Holds the various APIs involved as a PHP class. Download this class at the end of the tutorial
-require_once('php/google-login-api.php');
 
 class GoogleCalendarApi
 {
