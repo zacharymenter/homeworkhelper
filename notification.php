@@ -31,7 +31,25 @@
             <form id="client">
 
             <h3>Set Notification</h3>
-            <input type="text" placeholder="Enter Assignment Title" id="title" required>
+            <select id="title" required>   
+                <option value="" disabled selected hidden>Select an assignment...</option>
+                <?php
+                    session_start();
+                    require_once('sql_conn.php');
+                    
+                    $email = $_SESSION["email"];
+
+                    $query = "SELECT * FROM assignment WHERE email='$email' AND status=0";
+                    $result = mysqli_query($dbc, $query);
+
+
+                    while($row = mysqli_fetch_array($result)) {   //Creates a loop to loop through results
+                        echo "  <option value=\"" . $row['name'] . "\">" . $row['name'] . " due on " . date_format(date_create($row['date'] . $row['time']), 'D\, M d\, g:ia') . "</option>";
+                    }
+
+                    mysqli_close($dbc);
+                ?>
+            </select>
             <input type="datetime-local" placeholder="Enter Notification Time" id="time" required>
 
             </form>

@@ -28,11 +28,12 @@
 
                     <ul id="assignment-list">
                         <?php
-                            $con = mysqli_connect('localhost', 'root', '', 'homeworkhelper');
-                            $email = 'test@gmail.com';
+                            session_start();
+                            require_once('sql_conn.php');
+                            $email = $_SESSION["email"];
 
                             $query = "SELECT * FROM assignment WHERE email='$email' AND status=1";
-                            $result = mysqli_query($con, $query);
+                            $result = mysqli_query($dbc, $query);
 
 
                             while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
@@ -49,7 +50,7 @@
                                         </li>";  
                             }
 
-                            mysqli_close($con);
+                            mysqli_close($dbc);
                         ?>
                     </ul>
                 </div>

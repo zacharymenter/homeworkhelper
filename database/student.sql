@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2021 at 05:50 PM
+-- Generation Time: Apr 29, 2021 at 06:43 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -45,7 +45,9 @@ INSERT INTO `student` (`S_ID`, `s_name`, `email`, `username`, `s_password`, `sch
 (13, 'Jeffrey Lappe', 'jeff@gmail.com', 'Jeff04', 'password', 'chip_tech'),
 (14, 'Jonathan Viegut', 'jon@gmail.com', 'hotman69', 'nice', 'regis'),
 (15, 'Zach Menter ', 'zach05@gmail.com', 'WickedFresh37', 'password', 'memorial'),
-(16, 'Heather Baranek', 'heather02@gmail.com', 'Baraneha5997', 'coolbeans', 'uwec');
+(16, 'Heather Baranek', 'heather02@gmail.com', 'Baraneha5997', 'coolbeans', 'uwec'),
+(0, 'test2', 'test2@gmail.com', 'test2', 'password', 'uwec'),
+(0, 'Test', 'test@gmail.com', 'test', 'password', 'uwec');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
