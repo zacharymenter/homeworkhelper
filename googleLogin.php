@@ -36,9 +36,8 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
         </div>
         <div id = "container">
             <form action="googleLogin.php" method="post">
-            <h3>Click <a href="<?=$login_url?>">export</a> to add to Google Calendar</h3>
-            <button type = "button" class="cancelbtn">Cancel</button>
-            <span class="psw"><a href="index.php">go back?</a></span>
+                <h3>Click <a href="<?=$login_url?>">export</a> to add to Google Calendar</h3>
+                <button type = "button" class="cancelbtn" onclick = "document.location = 'index.php'">Cancel</button>
             </form>
         </div>    
     </body>

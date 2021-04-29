@@ -58,10 +58,10 @@
                     ?>
             </div>
             <div class="stack">
+                <div class="green row"><a href="completed.php"><i class="fa fa-bell fa-5x"></i></a><h3>Completed Assignments</h3></div>
                 <div class="blue row"><a href="graded.php"><i class="fa fa-calculator fa-5x"></i></i></a><h3>Grades</h3></div>
                 <div class="yellow row"><a href="googleLogin.php"><i class="fa fa-calendar fa-5x"></i></a><h3>Calendar</h3></div>
-                <div class="green row"><a href="notification.php"><i class="fa fa-bell fa-5x"></i></a><h3>Notifications</h3></div>
-                <div class="red row" id="profile"><a href="completed.php"><i class="fa fa-user fa-5x"></i></a><h3>Profile</h3></div>
+                <div class="red row"><a href="notification.php"><i class="fa fa-bell fa-5x"></i></a><h3>Notifications</h3></div>
             </div>
              <!--
                 <div class="wide green block" id="completed">
