@@ -30,30 +30,13 @@
             
             <form id="client">
 
-            <h3>Set Notification</h3>
-            <select id="title" required>   
-                <option value="" disabled selected hidden>Select an assignment...</option>
-                <?php
-                    session_start();
-                    require_once('sql_conn.php');
-                    
-                    $email = $_SESSION["email"];
-
-                    $query = "SELECT * FROM assignment WHERE email='$email' AND status=0";
-                    $result = mysqli_query($dbc, $query);
-
-
-                    while($row = mysqli_fetch_array($result)) {   //Creates a loop to loop through results
-                        echo "  <option value=\"" . $row['name'] . "\">" . $row['name'] . " due on " . date_format(date_create($row['date'] . $row['time']), 'D\, M d\, g:ia') . "</option>";
-                    }
-
-                    mysqli_close($dbc);
-                ?>
-            </select>
-            <input type="datetime-local" placeholder="Enter Notification Time" id="time" required>
+            <h3>Choose Notification Type</h3>
+          
+        
 
             </form>
-            <button type="button" onclick = "myFunction()">Add</button>
+            <button type="button" onclick = "document.location = 'overall_notification.php'">Overall Notification</button>
+            <button type = "button"  onclick = "document.location = 'individual_notification.php'">Individual Notification</button>
             <button type = "button" class="cancelbtn" onclick = "document.location = 'index.php'">Cancel</button>
             
            

@@ -4,7 +4,16 @@
 
       function myFunction(){
       
-            var title = document.getElementById("title").value; 
+           
+            var input = document.getElementById("title").value; 
+            var title = ""; 
+
+            for(var i = 0; i < title.length; i++){
+                var p = input[i]; 
+                title = title + " " + p.value; 
+
+            }
+          
             var notDate = new Date(document.getElementById('time').value); 
             var currentDate = new Date(); 
             seconds = notDate - currentDate; 
@@ -12,6 +21,8 @@
             myVar = setTimeout(alertFunc, seconds, title);  
             
         }
+
+  
    
 
         function alertFunc(title){
