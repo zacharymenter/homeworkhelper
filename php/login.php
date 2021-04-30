@@ -33,10 +33,10 @@
       $row = mysqli_fetch_array($response);
       $_SESSION["email"] = $row['email'];
 
-      header("location: two_factor.html");
+      header("location: ../two_factor.html");
    }else {
 
-      header("location: login.html");
+      header("location: ../login.html");
    }
 
 

@@ -49,7 +49,7 @@
                         <?php
                             session_start();
 
-                            require_once('sql_conn.php');
+                            require_once('php/sql_conn.php');
                             
                             $email = $_SESSION["email"];
 
@@ -66,7 +66,7 @@
                                                 </div>
                                                 <div class=\"assignment-desc\">" . $row['description'] . "</div>
                                                 <div class=\"assignment-due-date\">" . date_format(date_create($row['date'] . $row['time']), 'D\, M d\, g:ia') . "</div>
-                                                <a href=\"http://www.google.com/calendar/event?action=TEMPLATE&text=" . $row['name'] . "&dates=". date_format(date_create($row['date'] . $row['time']), 'Ymd\This') . "/" . date_format(date_create($row['date'] . $row['time']), 'Ymd\This') . "&details=" . $row['description'] . "&location=\" target=\"_blank\">Add to Google Calendar</a>
+                                                <a class=\"calendar-link\" href=\"http://www.google.com/calendar/event?action=TEMPLATE&text=" . $row['name'] . "&dates=". date_format(date_create($row['date'] . $row['time']), 'Ymd\This') . "/" . date_format(date_create($row['date'] . $row['time']), 'Ymd\This') . "&details=" . $row['description'] . "&location=\" target=\"_blank\">Add to Google Calendar</a>
                                                 <div class=\"plain-date\" style=\"display:none\">" . $row['date'] . " " . $row['time'] . "</div>";
 
                                 
@@ -85,14 +85,6 @@
 
                             mysqli_close($dbc);
                         ?>
-                        <!-- <li>
-                            <form action="completeAssignment.php" method="post" class="assignment">
-                                <div class="assignment-name"><h3>Test</h3></div>
-                                <div class="assignment-desc">Test assignment description.</div>
-                                <div class="assignment-due-date">2021-04-13</div>
-                                <input onChange="this.form.submit()" type="checkbox" class="assignment-checkbox">
-                            </form>
-                        </li> -->
                     </ul>
                 </div>
             </div>

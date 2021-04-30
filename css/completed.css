@@ -11,5 +11,6 @@ body {
   background-color: #87d37b;
 }
 
-nav > ul > li.active {
+.assignment-name {
+  color: #87d37b;
 }

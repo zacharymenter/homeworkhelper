@@ -7,6 +7,6 @@ define('CLIENT_ID', '755526323013-vrhpdhmml0gf0c5pve3cushqe4pnl52b.apps.googleus
 define('CLIENT_SECRET', 'J8fGNXRgyHD-kyWsOsqxEd4i');
 
 /* Google App Redirect Url */
-define('CLIENT_REDIRECT_URL', 'http://localhost/homeworkhelper/success.php');
+define('CLIENT_REDIRECT_URL', 'http://localhost/homeworkhelper/php/success.php');
 
 ?>

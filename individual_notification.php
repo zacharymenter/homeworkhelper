@@ -35,7 +35,7 @@
                 <option value="" disabled selected hidden>Select an assignment...</option>
                 <?php
                     session_start();
-                    require_once('sql_conn.php');
+                    require_once('php/sql_conn.php');
                     
                     $email = $_SESSION["email"];
 
@@ -54,7 +54,7 @@
 
             </form>
             <button type="button" onclick = "myFunction()">Add</button>
-            <button type = "button" class="cancelbtn" onclick = "document.location = 'notification.php'">Cancel</button>
+            <button type = "button" class="cancelbtn" onclick = "document.location = 'notification.html'">Cancel</button>
             
            
         </div> 

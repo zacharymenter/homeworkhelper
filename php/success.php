@@ -14,43 +14,6 @@ require_once('setting.php');
 
 class GoogleCalendarApi
 {
-	public function GetUserCalendarTimezone($access_token) {
-		$url_settings = 'https://www.googleapis.com/calendar/v3/users/me/settings/timezone';
-	
-		$ch = curl_init();		
-		curl_setopt($ch, CURLOPT_URL, $url_settings);		
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);	
-		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: Bearer '. $access_token));	
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);	
-		$data = json_decode(curl_exec($ch), true);
-		$http_code = curl_getinfo($ch,CURLINFO_HTTP_CODE);		
-		if($http_code != 200) 
-			throw new Exception('Error : Failed to get timezone');
-
-		return $data['value'];
-	} 
-
-	public function GetCalendarsList($access_token) {
-		$url_parameters = array();
-
-		$url_parameters['fields'] = 'items(id,summary,timeZone)';
-		$url_parameters['minAccessRole'] = 'owner';
-
-		$url_calendars = 'https://www.googleapis.com/calendar/v3/users/me/calendarList?'. http_build_query($url_parameters);
-	
-		$ch = curl_init();		
-		curl_setopt($ch, CURLOPT_URL, $url_calendars);		
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);	
-		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: Bearer '. $access_token));	
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);	
-		$data = json_decode(curl_exec($ch), true);
-		$http_code = curl_getinfo($ch,CURLINFO_HTTP_CODE);		
-		if($http_code != 200) 
-			throw new Exception('Error : Failed to get calendars list');
-
-		return $data['items'];
-	}
-
     public function GetAccessToken($client_id, $redirect_uri, $client_secret, $code) {	
 		$url = 'https://www.googleapis.com/oauth2/v4/token';			
 	
@@ -142,42 +105,5 @@ if(isset($_GET['code'])) {
 	}
 }
 mysqli_close($con);
+header("location: ../success.html")
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="js/submitForm.js"></script>
-        <title>Login</title>
-    </head>
-    <body>
-        <div id = "flexbox">
-            <div id = "blue">
-                <i class="fa fa-pencil fa-5x"></i>
-            </div>
-            <div id = "red">
-                <i class="fa fa-calculator fa-5x"></i>
-            </div>
-
-            <div id = "green">
-                <i class="fa fa-calendar fa-5x"></i>
-            </div>
-
-            <div id = "yellow">
-                <i class="fa fa-bell fa-5x"></i>
-            </div>
-        </div>
-        <div id = "container">
-            <form action="login.php" method="post">
-            <h3>Homework Helper</h3>
-            <p>You successfully exported your assignments to Google Calendar</p>
-            <!----put into flexbox-->
-            <span class="psw"><a href="index.php">go back?</a></span>
-            </form>
-        </div> 
-    </body>
-</html>

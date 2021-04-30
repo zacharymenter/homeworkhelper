@@ -32,5 +32,5 @@
         
     // Close connection
     mysqli_close($dbc);
-    header('Location: two_factor.html'); 
+    header('Location: ../two_factor.html'); 
 ?>

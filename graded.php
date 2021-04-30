@@ -29,7 +29,7 @@
                     <ul id="assignment-list">
                         <?php
                             session_start();
-                            require_once('sql_conn.php');
+                            require_once('php/sql_conn.php');
                             $email = $_SESSION["email"];
 
                             $query = "SELECT * FROM assignment WHERE email='$email' AND status=2";

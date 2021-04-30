@@ -1,12 +1,5 @@
-<?php
-
-require_once('php/setting.php');
-
-$login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('https://www.googleapis.com/auth/calendar') . '&redirect_uri=' . urlencode(CLIENT_REDIRECT_URL) . '&response_type=code&client_id=' . CLIENT_ID . '&access_type=online';
-
-?>
-         
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,22 +16,23 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
             </div>
             <div id = "red">
                 <i class="fa fa-calculator fa-5x"></i>
-
             </div>
+
             <div id = "green">
                 <i class="fa fa-calendar fa-5x"></i>
-
             </div>
+
             <div id = "yellow">
                 <i class="fa fa-bell fa-5x"></i>
-                
             </div>
         </div>
         <div id = "container">
-            <form action="googleLogin.php" method="post">
-                <h3>Click <a href="<?=$login_url?>">export</a> to add to Google Calendar</h3>
-                <button type = "button" class="cancelbtn" onclick = "document.location = 'index.php'">Cancel</button>
+            <form action="login.php" method="post">
+            <h3>Homework Helper</h3>
+            <p>You successfully exported your assignments to Google Calendar</p>
+            <!----put into flexbox-->
+            <span class="psw"><a href="index.php">go back?</a></span>
             </form>
-        </div>    
+        </div> 
     </body>
-</html>      
+</html>
