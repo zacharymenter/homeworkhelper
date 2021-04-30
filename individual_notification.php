@@ -44,7 +44,7 @@
 
 
                     while($row = mysqli_fetch_array($result)) {   //Creates a loop to loop through results
-                        echo "  <option value=\"" . $row['name'] . "\">" . $row['name'] . " due on " . date_format(date_create($row['date'] . $row['time']), 'D\, M d\, g:ia') . "</option>";
+                        echo "  <option value=\"" . $row['name'] . "\">" . $row['name'] . " due on " . date_format(date_create($row['date'] . $row['time']), 'D\, M d\, g:ia') ."</option>";
                     }
 
                     mysqli_close($dbc);
