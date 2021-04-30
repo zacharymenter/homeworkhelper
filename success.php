@@ -119,7 +119,6 @@ if(isset($_GET['code'])) {
         // connect to database
 		$con = mysqli_connect('localhost', 'root', '', 'homeworkhelper');
         //email linked to assingments
-		session_start();
         $email = $_SESSION["email"];
 
 		$query = "SELECT * FROM assignment WHERE email='$email'";
