@@ -28,10 +28,10 @@
 
         <div id = "container">
             
-        <form id="client">
+        <form id="client" action="overall.php" method="POST">
 
         <h3>Set Notification</h3>
-        <select id="title" required>   
+        <select id="title2" name="title2" required>   
             <option value="" disabled selected hidden>Select assignment group date...</option>
             <?php
                 session_start();
@@ -51,12 +51,13 @@
                
             ?>
         </select>
-        <label for="time">Enter notification date</label>
-        <input type="datetime-local" placeholder="Enter Notification Time" id="time" required>
+        <label for="time2">Enter notification date</label>
+        <input type="datetime-local" placeholder="Enter Notification Time" id="time2" name="time2" required>
+        <button type="submit" >Add</button>
 
     
         </form>
-        <button type="button" onclick = "myFunction()">Add</button>
+        
         <button type = "button" class="cancelbtn" onclick = "document.location = 'notification.html'">Cancel</button>
                         
             
