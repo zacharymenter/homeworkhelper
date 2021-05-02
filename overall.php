@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>Document</title>
 </head>
 <body>
+    <div id = "flexbox">
+            <div id = "blue">   
+            </div>
+    
+            <div id = "red">
+            </div>
+    
+            <div id = "green">
+            </div>
+    
+            <div id = "yellow">
+            </div>
+    
+    </div>
+
+    <div id = "container">
+            
+            <form id="client">
+    
+            <h3>Set Notification</h3>
+            <select id="title3" name="title3" required>   
+                <option value="" disabled selected hidden>Select assignment group date...</option>
+                <?php
+                  
+                   
+                ?>
+            </select>
+            <label for="time3">Enter notification date</label>
+            <input type="datetime-local" placeholder="Enter Notification Time" id="time3" name="time3" required>
+            <button type="submit" >Add</button>
+    
+        
+            </form>
+            
+            <button type = "button" class="cancelbtn" onclick = "document.location = 'notification.html'">Cancel</button>
+                            
+                
+               
+            </div> 
+
+
     <?php
     
     
@@ -41,8 +85,6 @@
 
      
 
-     // Close connection
-    mysqli_close($dbc);
 
     ?> 
 

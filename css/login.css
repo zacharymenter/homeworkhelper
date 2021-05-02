@@ -15,6 +15,7 @@ body {
 
 #blue {
   width: 49.7%;
+  height: 50%;
   margin-right: 0.5%;
   background-color: #8ac4f4;
   text-align: left;
@@ -28,13 +29,14 @@ body {
 
 #red {
   width: 49.7%;
+  height: 50%;
   background-color: #f54746;
   text-align: right;
 }
 
 #green {
   width: 49.7%;
-
+  height: 50%;
   margin-top: 0.5%;
   margin-right: 0.5%;
   background-color: #87d37b;
@@ -47,12 +49,14 @@ body {
 
 #yellow {
   width: 49.7%;
+  height: 50%;
   margin-top: 0.5%;
   background-color: #ffc413;
   text-align: right;
 }
 
 .fa-bell {
+  padding-bottom: 50px;
   padding-top: 200px;
 }
 
@@ -69,13 +73,14 @@ body {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   left: 0;
   right: 0;
   z-index: 10;
 }
 
 #container2 {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 #container3 {
   width: 60%;
