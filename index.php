@@ -40,7 +40,7 @@
                                             </div>
                                             <div class=\"assignment-desc\">" . $row['description'] . "</div>
                                             <div class=\"assignment-due-date\">" . date_format(date_create($row['date'] . $row['time']), 'D\, M d\, g:ia') . "</div>
-                                           
+                                            <div class=\"plain-date\" style=\"display:none\">" . $row['date'] . " " . $row['time'] . "</div>
                                         </form>
                                     </li>";  
                         }
