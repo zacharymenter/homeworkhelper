@@ -1,5 +1,5 @@
 <?php
-    require_once('../sql_conn.php');
+    require_once('sql_conn.php');
 
     session_start();
     $email = $_SESSION["email"];

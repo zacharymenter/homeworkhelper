@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2021 at 12:20 AM
+-- Generation Time: May 03, 2021 at 11:27 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -45,13 +45,14 @@ CREATE TABLE `assignment` (
 
 INSERT INTO `assignment` (`email`, `id`, `name`, `description`, `date`, `time`, `status`, `grade`, `sep`) VALUES
 ('test2@gmail.com', 0, 'Test Name', 'This assignment is for user number 2.', '2021-04-29', '00:00:00', 0, 0, 0),
-('test@gmail.com', 0, 'Test Name', 'This is a hard coded Canvas assignment.', '2021-04-29', '23:59:00', 2, 95, 1),
+('test@gmail.com', 0, 'Test Name', 'This is a hard coded Canvas assignment.', '2021-04-01', '23:59:00', 2, 95, 1),
 ('test@gmail.com', 1, 'Test Name Number 2', 'This is another hard coded Canvas assignment.', '2021-04-15', '00:00:00', 1, 0, 1),
-('test@gmail.com', 2, 'Assignment 2', 'This assignment is for user 1 and is from the client side.', '2000-02-26', '00:00:00', 1, 0, 0),
-('test@gmail.com', 3, 'Math Homework', 'User inputted assignment.', '2021-05-06', '23:59:00', 0, 0, 0),
-('test@gmail.com', 4, 'Physics Homework', 'User inputted assignment.', '2021-05-05', '20:00:00', 0, 0, 0),
-('test@gmail.com', 5, 'CS Homework', 'User inputted assignment.', '2021-05-05', '23:59:00', 0, 0, 0),
-('test@gmail.com', 6, 'Essay', 'Assignment from Canvas.', '2021-05-04', '23:59:00', 0, 88, 1);
+('test@gmail.com', 2, 'Assignment 2', 'This assignment is for user 1 and is from the client side.', '2000-04-07', '00:00:00', 1, 0, 0),
+('test@gmail.com', 3, 'Math Homework', 'User inputted assignment.', '2021-05-12', '23:59:00', 0, 0, 0),
+('test@gmail.com', 4, 'Physics Homework', 'User inputted assignment.', '2021-05-11', '20:00:00', 0, 0, 0),
+('test@gmail.com', 5, 'CS Homework', 'User inputted assignment.', '2021-06-01', '23:59:00', 0, 0, 0),
+('test@gmail.com', 6, 'Essay', 'Assignment from Canvas.', '2021-05-13', '23:59:00', 0, 88, 1),
+('test@gmail.com', 7, '355 Project', 'Another graded assignment.', '2021-05-06', '23:59:00', 2, 100, 1);
 
 --
 -- Indexes for dumped tables
