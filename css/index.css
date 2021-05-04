@@ -79,6 +79,9 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+.fa:hover, .button:hover {
+  opacity: 0.8;
+}
 .button {
   position: absolute;
   bottom: 0.5rem;
