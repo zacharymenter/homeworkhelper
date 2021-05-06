@@ -84,7 +84,7 @@ if(isset($_GET['code'])) {
         //email linked to assingments
         $email = $_SESSION["email"];
 
-		$query = "SELECT * FROM assignment WHERE email='$email'";
+		$query = "SELECT * FROM assignment WHERE email='$email' AND status=0";
 		$result = mysqli_query($con, $query);
 
 
